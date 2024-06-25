@@ -13,9 +13,6 @@ st.sidebar.header("Input Features")
 
 #load the pickle files
 model = pickle.load(open('artifacts/predicted_price.pkl','rb'))
-# Result_plot = pickle.load(open('artifacts/Result_plot.pkl','rb'))
-
-# Result_plot = np
 
 
 def user_input_features(model):
@@ -88,7 +85,6 @@ prediction = model.predict(input_df)
 #Click Button 
 if st.sidebar.button("submit"):
     st.write(f"The predicted house price is ${prediction[0] * 1000:.2f}")
-    st.scatter_chart(model)
 
 
 
