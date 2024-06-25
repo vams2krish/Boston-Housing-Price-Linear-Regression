@@ -5,9 +5,9 @@ import pandas as pd
 
 #Streamlit design
 
-st.header("Boston House Prediction - Linear Regression Model")
-st.title("Check house price below")
-st.subheader('Prediction')
+st.header("Boston House Prices")
+
+st.subheader('Lets predict the house Prediction')
 st.sidebar.header("Input Features")
 
 
